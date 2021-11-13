@@ -1,0 +1,28 @@
+/*animacion de girar*/
+*,*:after, *:before{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.loader_9,.loader_9:before,.loader_9:after{-webkit-animation:load_neuf 1s infinite ease-in;-moz-animation:load_neuf 1s infinite ease-in;-ms-animation:load_neuf 1s infinite ease-in;animation:load_neuf 1s infinite ease-in;width:20px;height:80px} .loader_9:before,.loader_9:after{position:absolute;top:0;content:''} .loader_9:before{right:-20px} .loader_9{position:relative;-webkit-animation-delay:-0.16s;-moz-animation-delay:-0.16s;-ms-animation-delay:-0.16s;animation-delay:-0.16s} .loader_9:after{right:20px;-webkit-animation-delay:-0.32s;-moz-animation-delay:-0.32s;-ms-animation-delay:-0.32s;animation-delay:-0.32s} @-webkit-keyframes load_neuf{0%,80%,100%{box-shadow:0 0 #D3D3D3;height:80px;background:#D3D3D3}40%{box-shadow:0 -15px #00A096;height:100px;background:#00A096}} @-moz-keyframes load_neuf{0%,80%,100%{box-shadow:0 0 #D3D3D3;height:80px;background:#D3D3D3}40%{box-shadow:0 -15px #00A096;height:100px;background:#00A096}} @-ms-keyframes load_neuf{0%,80%,100%{box-shadow:0 0 #D3D3D3;height:80px;background:#D3D3D3}40%{box-shadow:0 -15px #00A096;height:100px;background:#00A096}} @keyframes load_neuf{0%,80%,100%{box-shadow:0 0 #D3D3D3;height:80px;background:#D3D3D3}40%{box-shadow:0 -15px #00A096;height:100px;background:#00A096}}
+
+#contenedor{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1000
+}
+
+#carga{
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}

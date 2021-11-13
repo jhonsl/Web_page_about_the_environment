@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ejercicio 4</title>
+
+    <!-- CSS de Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!----CSS para el carousel---->
+    <link rel="stylesheet" href="css/carousel.css">
+        <!---- Bootstrap CSS ---->
+  <link rel="stylesheet" href="css/bootstrap.css">
+    <!----CSS para los efectos de las imagenes--->
+  <link rel="stylesheet" href="css/imagenes.css">
+    <!----CSS para el carousel---->
+  <link rel="stylesheet" href="css/carousel.css">
+    <!----CSS para los colores---->
+  <link rel="stylesheet" href="css/colors.css">
+    <!----CSS para las animaciones---->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+  <!---scroll js---->
+  <script src="js/smooth-scroll.min.js"></script>
+
+  </head>
+  <body>
+
+     <!-- Fixed navbar -->
+  <nav id="menu" class="navbar navbar-expand-md navbar-dark fixed-top nav-color1">
+    <a class="navbar-brand" href="index.html">
+      <img src="media/imagenes/logos e iconos/logo.png" width="100" height="55" alt="Logo Boostrap">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse text-center" id="navbarTogglerDemo01">
+      <div class="navbar-nav m-auto">
+
+        <a class="nav-item nav-link active" href="#">Inicio</a>
+        <a class="nav-item nav-link" href="#">Galeria</a>
+        <a class="nav-item nav-link" href="#">Acerca de nosotros</a>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Temas
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Antarida</a>
+            <a class="dropdown-item" href="#">Bosques</a>
+            <a class="dropdown-item" href="#">Desiertos</a>
+          </div>
+        </li>
+
+      </div>
+      <div>
+        <a class="navbar-brand" href="https://www.instagram.com/?hl=es-la">
+          <img src="media/imagenes/logos e iconos/instagram.png" width="37" height="37" alt="Logo Boostrap">
+        </a>
+
+        <a class="navbar-brand" href="https://touch.facebook.com/?locale2=es_ES">
+          <img src="media/imagenes/logos e iconos/facebook.png" width="30" height="30" alt="Logo Boostrap">
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!----carousel---->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="height: 100vh;">
+        <video src="media/videos/carousel/antartica.mp4" autoplay loop></video>
+        <div class="container">
+          <div data-aos="zoom-in-right" class="carousel-caption text-left">
+            <h1>Ejemplo1.</h1>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" style="height: 100vh;">
+        <video src="media/videos/carousel/bosques.mp4" autoplay loop></video>
+        <div class="container">
+          <div data-aos="zoom-in-up" class="carousel-caption">
+            <h1>Ejemplo2.</h1>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" style="height: 100vh;">
+        <video src="media/videos/carousel/africa.mp4" autoplay loop></video>
+        <div class="container">
+          <div data-aos="zoom-in-left" class="carousel-caption text-right">
+            <h1>Ejemplo3.</h1>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Siguiente</span>
+    </a>
+  </div>
+  <!----carousel---->
+
+
+  <!----Circle Images---->
+  <div class="container mt-2 mb-2">
+    <div class="row">
+
+      <div class="col-12 col-md-4 mb-4">
+        <div class="div text-center m-4">
+            <h1 data-aos="fade-down" class="p-4">artico</h1>
+        </div>
+        <div class="d-flex justify-content-center">
+          <a  data-aos="fade-right"  ata-scroll href=#seccion1>
+            <img src="media/imagenes/caras animales/oso polar.jpg" class="rounded-circle zoom gris" width="200px" height="200px">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 mb-4">
+        <div class="div text-center m-4">
+            <h1 data-aos="fade-down" class="p-4">Bosques</h1>
+        </div>
+        <div class="d-flex justify-content-center">
+          <a data-aos="fade-down" data-scroll href=#seccion2>
+            <img src="media/imagenes/caras animales/mono.jpg" class="rounded-circle zoom gris" width="200px" height="200px">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 mb-4">
+        <div class="div text-center m-4">
+            <h1 data-aos="fade-down" class="p-4">Africa</h1>
+        </div>
+        <div class="d-flex justify-content-center">
+          <a data-aos="fade-left" data-scroll href=#seccion3>
+            <img src="media/imagenes/caras animales/leon.jpg" class="rounded-circle zoom gris" width="200px" height="200px">
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!----Circle Images---->
+
+<div class="container mt-5">
+    <h1 data-aos="fade-right" class="text-center mb-3 text-white-50 ">Cambio climatico</h1>
+
+    <p data-aos="fade-left"class="mt-4" style="color: yellow"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi omnis, iure accusamus facere architecto id tempore rerum, esse soluta doloribus, explicabo hic! Minus repellendus molestiae, excepturi. Asperiores minima, neque iusto!</span>
+    <span>Nulla accusamus fugit vel maxime, ea debitis et libero doloribus repudiandae deserunt rerum vitae molestias tempora, odit minima ullam. Laudantium accusamus tenetur dignissimos ratione, recusandae similique excepturi veritatis ipsa et.</span>
+    <span>Optio, exercitationem, numquam. Fuga, illo asperiores quasi debitis eius tempora eum. Autem fuga explicabo quos in sapiente officia, libero est ipsam fugit! Labore tenetur error saepe nisi inventore quisquam atque.</span>
+    <span>Ea ratione fugit sunt, reprehenderit nam accusantium, eos neque commodi in et sapiente! Odit nobis eos, vel rerum fuga maiores error molestiae sit voluptatum dignissimos accusantium obcaecati blanditiis molestias iusto!</span>
+    <span>Quas nulla dolore autem minus nobis, cum accusantium deserunt, neque corporis minima, exercitationem harum. Possimus quisquam aliquid nulla dolor repellat optio impedit, fuga omnis molestiae eaque magnam officia non quis!</span>
+    <span>Eligendi qui, placeat necessitatibus fugiat dolorem voluptatibus asperiores. Id amet incidunt accusantium distinctio dolorum labore, aliquam recusandae maiores omnis earum nostrum, at magnam eaque quasi inventore nam odio doloremque optio.</span>
+    <span>Fugit quam magni quas ratione facilis, facere laudantium corporis rerum quod numquam labore, beatae tenetur ipsum laboriosam veritatis ducimus voluptate, possimus. Voluptatibus id, at sequi. Tempore nihil optio incidunt a.</span>
+    <span>Consequuntur quibusdam voluptatem a ad repudiandae, nisi praesentium assumenda optio deleniti dignissimos debitis ipsum odio minus, iusto accusamus quas reiciendis modi quam voluptate? Sequi numquam laborum quis, assumenda officiis delectus?</span>
+    <span>Tempore, natus ipsum, dolor vel impedit molestiae nam nihil quibusdam debitis, sint optio a aut ducimus aliquid. Facere tempore laborum fugiat eaque ullam, sit veritatis praesentium, non laboriosam, nemo dolores.</span>
+    <span>Doloribus quaerat numquam maxime cupiditate, veritatis, aperiam quasi maiores laudantium consectetur expedita in. Molestias nam, optio officia eligendi eaque soluta quasi illum laborum maxime necessitatibus ut, similique voluptatibus velit tempora.</span>
+    <span>Tenetur accusantium ea quae, ut iure aut excepturi nemo officiis ducimus deserunt nam in saepe repudiandae possimus voluptate error. Similique, cupiditate laudantium reiciendis omnis dolor cum provident. Non, ad minima.</span>
+    <span>Modi a architecto voluptatum porro quidem dolor ipsum quod amet culpa, numquam quas, unde magni voluptatem corporis vitae quibusdam sed animi iusto aspernatur necessitatibus doloremque perspiciatis ipsam vel aperiam. Quisquam.</span>
+    <span>Soluta quidem aliquid vitae itaque at perferendis quae reprehenderit deserunt minima reiciendis amet sequi eos aspernatur provident obcaecati, cumque harum ea maxime corrupti voluptas. Pariatur nihil dolores asperiores at. Ipsum.</span>
+    <span>Debitis reiciendis magnam nesciunt, assumenda incidunt qui expedita quod! Autem tempora, fuga ipsa iusto facere beatae quas est provident deserunt accusantium voluptate iure, eaque cupiditate magni, iste, tempore laudantium ab!</span>
+    <span>Similique impedit in quaerat, maxime repellendus, obcaecati sapiente quam iure rem quisquam, cupiditate fuga alias officia atque? Quia at repellendus iste, minus laborum debitis ad eligendi, molestias eum minima doloremque.</span>
+    <span>Qui officia exercitationem voluptates iste, veniam, atque magnam architecto temporibus facere delectus dolorem explicabo eum sequi dolor quisquam, corporis? Magnam facere provident ipsum mollitia, repudiandae quaerat reiciendis deserunt possimus, rem.</span>
+    <span>Tenetur nam perferendis, vel inventore culpa eveniet! Voluptas sint laudantium totam recusandae deserunt quas rem iusto perferendis eveniet repellat, labore quia id, fugiat at facilis iure, ex tenetur molestiae corporis.</span>
+    <span>Illo nisi fuga earum placeat accusamus quo temporibus, nobis modi. Hic provident laudantium, vero optio reprehenderit perferendis quaerat eum, impedit, iusto inventore voluptatem quas delectus ut beatae sequi autem officiis?</span>
+    <span>Fuga reprehenderit eos, magnam numquam, laborum nam a odit nihil vel quod soluta itaque, atque cupiditate enim incidunt, aliquid deserunt sequi! Doloremque error delectus velit, maxime, quidem ipsa repellat ex.</span>
+    <span>Quibusdam quo, aperiam laborum! Dolorum architecto, non at aut repudiandae ad distinctio praesentium velit. Mollitia eius aspernatur, hic illo praesentium sapiente quibusdam consequuntur quisquam sed aut accusamus, voluptatem, distinctio harum!</span></p>
+  </div>
+  <!----info---->
+
+  <!---seccion de temas--->
+  <div class="container-marketing mt-5 pt-5">
+    <div data-aos="flip-left" class="container-fluid card1">
+      <div class="container p-4">
+        <div class="row d-flex align-items-center " id="seccion1">
+
+          <div class="borde col-sm-12 col-md-7">
+            <h1 class=""> Display1</h1>
+            <p class="pl-2"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus rem dicta quos possimus alias explicabo amet perspiciatis in, nesciunt praesentium est doloremque dolores consectetur facere, ipsum laboriosam laudantium sed deleniti!</span>
+            <span>Modi mollitia repellat nobis? Temporibus eius necessitatibus similique, ipsam nemo aperiam numquam doloremque, exercitationem rem ea rerum facere eos qui eum ullam corporis aliquam, laboriosam iusto recusandae blanditiis. Consectetur, nostrum.</span>
+            <span>In natus eveniet aut, explicabo aspernatur earum vitae, repudiandae fuga atque voluptates minus distinctio tempora reiciendis quia sapiente animi fugit hic vero dicta excepturi cumque. Esse tenetur eos omnis quae.</span>
+            <span>Deleniti voluptas, maiores, natus ducimus ullam nisi facere excepturi! Aperiam, consequuntur sapiente repellendus hic. Provident quidem sit aliquid, et saepe. Quisquam ipsum, qui cupiditate, eveniet ullam sed fugit enim eaque.</span>
+            <span>Maxime libero ex veniam accusantium voluptatibus quae perferendis, ea quaerat id dicta, laboriosam atque animi asperiores molestiae necessitatibus reiciendis dolorum nam sit repellat sequi. Amet nihil rem, dicta a veniam?</span>
+            <span>Possimus necessitatibus, suscipit aperiam facere explicabo. Qui, autem, tempore odit, quos dolores soluta nihil repellendus itaque ratione a reiciendis velit. Illum vel blanditiis explicabo veritatis, error odit aliquam consectetur tempore.</span>
+            </p>
+
+            <button type="button" class="shadow-lg btn ml-2 mb-2 zoom" style="background: #0c7b93;">Ver más...</button>
+          </div>
+
+          <div class="col-md-5 cards" > 
+            <div class="front"> 
+            </div> 
+            <div class="back p-5">
+              <p class="pt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam id, doloribus exercitationem commodi explicabo aut nulla praesentium, nesciunt, fuga ab harum. Recusandae fugiat rem optio officia, accusamus blanditiis deserunt eveniet.
+              </p>
+
+              <button type="button" class="shadow-lg btn zoom" style="background: #0c7b93;">ver galeria</button>
+            </div> 
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <!---seccion de temas--->
+
+  <!-- JS de jQuery -->
+  <script src="js/jquery-3.4.1.slim.min.js"></script>
+  <!-- JS de Bootstrap -->
+  <script src="js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>
